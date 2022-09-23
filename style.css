@@ -9,17 +9,20 @@
 
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 1200px;
-  padding-left: 70px;
-  padding-right: 70px;
+  margin: 0;
+}
+
+header {
+width: 100%;
 }
 
 ul {
   list-style-type: none;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .button {
@@ -54,6 +57,7 @@ ul {
   flex-direction: row;
   align-items: flex-start;
   gap: 28px;
+  padding-left: 70px;
 }
 
 .menu-list {
@@ -69,10 +73,11 @@ ul {
   align-items: center;
   justify-content: end;
   gap: 20px;
+  padding-right: 70px;
 }
 
 .welcome {
   background-image: url(pictures/index-background.jpg);
-  width: 1200px;
+  width: 100%;
   height: 485px;
 }
