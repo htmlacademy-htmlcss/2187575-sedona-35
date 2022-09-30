@@ -10,21 +10,23 @@
     <header>
       <div class="navigation">
         <div class="container-left">
-          <img src="images/logo.svg" alt="logo" class="logo">
-            <nav class="menu">
-              <ul class="menu-list">
-                <li class="menu-item">
-                Главная
-                <hr class="current">
-                </li>
-                <li class="menu-item">
-                О Седоне
-                </li>
-                <li class="menu-item">
-                Гостиницы
-                </li>
-              </ul>
-            </nav>
+          <a href="#">
+            <img src="images/logo.svg" alt="logo" class="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-item">
+              Главная
+              <hr class="current">
+              </li>
+              <li class="menu-item">
+              О Седоне
+              </li>
+              <li class="menu-item">
+              Гостиницы
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="container-right">
           <img src="images/icons/search.svg" alt="search" class="search">
@@ -41,13 +43,13 @@
         <img src="images/welcome/vector-foot.svg" alt="Vector" class="img-welcome" >
       </div>
       <div class="main-text">
-      <p class="bold-text">Седона — небольшой городок в Аризоне,<br>
+      <p class="bold-text top">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</p>
-        <p class="normal-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="normal-text top">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <ul class="card-list">
         <li class="card blue">
-          <h2>Настоящий Городок</h2>
+          <h2 class="content-blue">Настоящий Городок</h2>
           <hr>
           <p class="bottom-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
@@ -73,7 +75,7 @@
           <img src="images/card/card-2.jpg" alt="card" width="800" height="384">
         </li>
         <li class="card blue">
-          <h2>Там есть <br> мост дьявола</h2>
+          <h2 class="content-blue">Там есть <br> мост дьявола</h2>
           <hr>
           <p class="bottom-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
@@ -100,8 +102,23 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </div>
+      <div class="subscribe">
+           <p class="subscribe-top">Подпишитесь на рассылку</p>
+           <p class="subscribe-bot">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+           <label>
+              <input type="text" name="email" placeholder="Ваш e-mail" class="email">
+              <input type="button" value="Подписаться" name="e-mail" class="subscribe-button">
+           </label>
+      </div>
     </main>
     <footer>
+      <div class="messenger">
+        <a href="https://vk.com/htmlacademy"><img src="pictures/messenger/Vk.svg" alt="VK"></a>
+        <a href="https://t.me/htmlacademy"><img src="pictures/messenger/Telegram.svg" alt="Telegrm"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="pictures/messenger/Youtube.svg" alt="Youtube"></a>
+      </div>
+      <p class="number-phone">+7 (812) 812-12-12</p>
+      <a href="https://htmlacademy.ru"><img src="pictures/messenger/HTML Academy.svg" alt="HTML Academy"></a>
     </footer>
   </div>
   </body>
