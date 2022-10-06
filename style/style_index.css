@@ -1,127 +1,20 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("PT Sans"),
-   url(/fonts/ptsans-700.woff2);
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"),
-   url(/fonts/ptsans-400.woff2);
-}
-
-.content {
-  padding-right: 70px;
-}
-
-body {
-  margin: 0;
-}
-
-header {
-width: 100%;
-}
-
-ul {
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-.current {
-  position: absolute;
-  top: 63px;
-  height: 2px;
-  width: 68px;
-  background-color: #756257;
-  border-style: none;
-}
-
-.content {
-  margin: 0 auto;
-  width: 1200px;
-}
-
-.button {
-  background: #756157;
-  border-radius: 4px;
-  border-style: none;
-  width: 160px;
-  height: 36px;
-  color: #FFFFFF;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.want {
-  margin-bottom: 5px;
-}
-
-.menu-item {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.navigation {
-  display: grid;
-  grid-template-columns: 600px 600px;
-}
-
-.container-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 5px;
-  padding-left: 70px;
-}
-
-.menu-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 32px;
-}
-
-.container-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  gap: 20px;
-  padding-right: 70px;
-}
-
 .welcome {
-  background-image: url(pictures/index-background.jpg);
+  background-image: url(/pictures/index-background.jpg);
   width: 100%;
   height: 485px;
   margin-bottom: 69px;
-  margin-top: -6px;
+  margin-top: -10px;
 }
 
 .img-welcome {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.img-welcome.top-content {
   padding-top: 51px;
-  padding-bottom: 11px;
 }
 
-.img-welcome.main-content {
-  padding-top: 54px;
-  padding-bottom: 25px;
+.img-welcome-vector {
+  padding-top: 25px;
 }
 
 main {
@@ -154,7 +47,7 @@ main {
   padding-bottom: 90px;
 }
 
-.card-list {
+.advantages-list {
   margin: 0;
   padding: 0;
   display: grid;
@@ -195,7 +88,7 @@ margin-top: -20px;
   background-color: #83B3D333;
 }
 
-h2 {
+h3 {
   font-family: 'PT Sans';
   font-weight: 700;
   font-size: 24px;
@@ -261,12 +154,12 @@ hr.white {
 
 .normal-text.hotel {
   margin-top: -20px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   line-height: 26px;
 }
 
 .subscribe {
-  background-image: url(pictures/subscribe-background.jpg);
+  background-image: url(/pictures/subscribe-background.jpg);
   background-size: 1200px;
   color: #FFFFFF;
 
@@ -277,8 +170,8 @@ hr.white {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  padding-top: 94px;
-  padding-bottom: 18px;
+  padding-top: 92px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -304,7 +197,7 @@ hr.white {
   padding-left: 20px;
   outline: #FFFFFF;
   border-style: none;
-  margin-bottom: 102px;
+  margin-bottom: 104px;
   margin-top: 0;
   margin-right: -4px;
   position: relative;
@@ -326,29 +219,4 @@ hr.white {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-left: 0;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 70px;
-  padding-left: 70px;
-  margin: 0;
-  align-items: center;
-
-}
-
-.messenger {
-  display: flex;
-  gap: 26px;
-  padding-left: 12px;
-}
-
-.number-phone {
-  font-family: 'PT Sans';
-  font-weight: 400;
-  font-size: 40px;
-  padding-left: 13px;
 }
