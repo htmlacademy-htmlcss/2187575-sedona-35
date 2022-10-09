@@ -152,9 +152,32 @@ body {
 
 .contact-messengers {
   display: flex;
-  gap: 26px;
-  padding-left: 12px;
+  gap: 27px;
+  padding-left: 11px;
   padding-top: 40px;
+}
+
+.social-link-vk {
+  background-image: url("/pictures/messenger/Vk.svg");
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+  padding-bottom: 1px;
+}
+
+.social-link-telegram {
+  background-image: url("/pictures/messenger/Telegram.svg");
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  padding-bottom: 1px;
+}
+
+.social-link-youtube {
+  background-image: url("/pictures/messenger/Youtube.svg");
+  display: inline-block;
+  width: 22px;
+  height: 17px;
 }
 
 .contact-phone {
@@ -163,11 +186,11 @@ body {
   padding-left: 15px;
   margin-top: 36px;
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .html-academy {
-  padding-top: 40px;
+  padding-top: 41px;
   margin-right: 9px;
 }
 
