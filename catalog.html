@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
-    <link rel="stylesheet" href="/style/style_header.css">
-    <link rel="stylesheet" href="/style/style_catalog.css">
-    <link rel="stylesheet" href="/style/style_footer.css">
+    <link rel="stylesheet" href="/style/styles.css">
   </head>
   <body>
     <div class="content">
       <header>
         <nav class="navigation">
-          <div class="container-left">
+          <div class="logo-menu">
             <a href="index.html">
-              <img src="images/logo.svg" alt="logo" class="logo">
+            <img src="images/logo.svg" width="140" height="70"  alt="Логотип Седона" class="logo">
             </a>
               <ul class="navigation-list">
                 <li class="navigation-item">
-                  <a href="index.html">Главная</a>
+                  <a href="index.html" class="navigation-page">Главная</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="#">О Седоне</a>
+                  <a href="#" class="navigation-page">О Седоне</a>
                 </li>
                 <li class="navigation-item current">
-                  <a href="#">Гостиницы</a>
-                  <hr class="hr-current catalog">
+                  <a href="#" class="navigation-page">Гостиницы</a>
                 </li>
               </ul>
           </div>
-          <ul class="container-right">
+          <ul class="user-menu">
             <li>
-              <img src="images/icons/search.svg" alt="Поиск" class="search">
+              <a href="#">
+              <img src="images/icons/search.svg" width="20" height="20" alt="Поиск" class="search">
+              </a>
             </li>
             <li>
-              <img src="images/icons/heart.svg" alt="Избранное" class="heart">
-              <span class="new-favorites">12</span>
+              <a href="#" class="navigation-favorites">
+                <img src="images/icons/heart.svg" width="18" height="17" alt="Избранное" class="heart">
+                <span class="new-favorites">12</span>
+              </a>
             </li>
             <li>
-              <button class="button want">Хочу сюда!</button>
+              <a class="button want">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -48,8 +49,11 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a href="index.html" class="breadcrumbs-link">
-                <img src="images/icons/in_home.svg" alt="На главную" class="breadcrumbs-in-home">
+                <img src="images/icons/in_home.svg" alt="На главную" class="breadcrumbs-image">
               </a>
+            </li>
+            <li>
+              <img src="/images/icons/breadcrumbs-arrow.svg" class="breadcrumbs-image">
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">
@@ -58,7 +62,7 @@
             </li>
           </ul>
           <section>
-            <h2 class="visuality-hidden">Список гостиниц с фильтрами</h2>
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset>
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -106,109 +110,144 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="butto blue" type="submit">Применить</button>
-              <button class="reset" type="reset">Сбросить</button>
+              <button class="catalog-filter-submit-button" type="submit">Применить</button>
+              <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
             </form>
           </section>
-          <section class="sorting" >
-            <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-            </select>
-            <a href="#" class="button-black">
-              <span class="visuality-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button-light">
-              <span class="visuality-hidden">Показать во весь экран</span>
-            </a>
-            <a href="#" class="button-light">
-              <span class="visuality-hidden">Показать список</span>
-            </a>
-          </section>
         </header>
+        <section class="sorting" >
+          <h2 class="found-hotels">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul>
+            <li>
+              <a href="#" class="button-black">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-light">
+                <span class="visually-hidden">Показать во весь экран</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-light">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </section>
         <section class="catalog">
           <ul class="product-cards">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="/images/product-card/hotel-1.jpg" class="product-card-image" alt="Фотография отеля Amara Resort & Spa">
+                <img src="/images/product-card/hotel-1.jpg" width="300" height="212" class="product-card-image" alt="Фотография отеля Amara Resort & Spa">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3>Amara Resort & Spa</h3>
               </a>
-                <section>
-                  <span class="type">Гостиница</span>
-                  <span class="price">От 4000 ₽</span>
-                </section>
-                <a href="#" class="product-card-button butto">Подробнее</a>
-                <button class="favorites-off">Избранное</button>
-              <section class="raiting">
-                <span class="stars">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+              <span class="product-card-type">Гостиница</span>
+              <span class="price">От 4000 ₽</span>
+              <a href="#" class="product-card-button ">Подробнее</a>
+              <button class="favorites-off">Избранное</button>
+              <span class="stars">
+                <ul>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                    <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                    <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  </ul>
               </span>
-              <span class="number-raiting">Рейтинг 8.5</span>
-              </section>
+              <span class="product-card-rating">Рейтинг 8.5</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="/images/product-card/hotel-2.jpg" class="product-card-image" alt="Фотография отеля Villas at Poco Diablo">
+                <img src="/images/product-card/hotel-2.jpg" width="300" height="212" class="product-card-image" alt="Фотография отеля Villas at Poco Diablo">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3>Villas at Poco Diablo</h3>
               </a>
-                <section>
-                  <span class="type">Гостиница</span>
-                  <span class="price">От 5000 ₽</span>
-                </section>
-                <a href="#" class="product-card-button butto">Подробнее</a>
-                <button class="favorites-on">В Избранном</button>
-              <section class="raiting">
-                <span class="stars">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+              <span class="product-card-type">Гостиница</span>
+              <span class="price">От 5000 ₽</span>
+              <a href="#" class="product-card-button butto">Подробнее</a>
+              <button class="favorites-on">В Избранном</button>
+              <span class="stars">
+                <ul>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                    <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                    <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                </ul>
               </span>
-              <span class="number-raiting">Рейтинг 9.2</span>
-              </section>
+              <span class="product-card-rating">Рейтинг 9.2</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="/images/product-card/hotel-3.jpg" class="product-card-image" alt="Фотография отеля Desert Quail Inn">
+                <img src="/images/product-card/hotel-3.jpg" width="300" height="212" class="product-card-image" alt="Фотография отеля Desert Quail Inn">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3>Desert Quail Inn</h3>
               </a>
-                <section>
-                  <span class="type">Гостиница</span>
-                  <span class="price">От 2500 ₽</span>
-                </section>
-                <a href="#" class="product-card-button butto">Подробнее</a>
-                <button class="favorites-off">Избранное</button>
-              <section class="raiting">
-                <span class="stars">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+              <span class="product-card-type">Гостиница</span>
+              <span class="price">От 2500 ₽</span>
+              <a href="#" class="product-card-button butto">Подробнее</a>
+              <button class="favorites-off">Избранное</button>
+              <span class="stars">
+                <ul>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                    <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                </ul>
               </span>
-              <span class="number-raiting">Рейтинг 6.9</span>
-              </section>
+              <span class="product-card-rating">Рейтинг 6.9</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="/images/product-card/hotel-4.jpg" class="product-card-image" alt="Фотография отеля GreenTree Inn">
+                <img src="/images/product-card/hotel-4.jpg" width="300" height="212" class="product-card-image" alt="Фотография отеля GreenTree Inn">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3>GreenTree Inn</h3>
               </a>
-                <section>
-                  <span class="type">Гостиница</span>
-                  <span class="price">От 1500 ₽</span>
-                </section>
-                <a href="#" class="product-card-button butto">Подробнее</a>
-                <button class="favorites-off">Избранное</button>
-              <section class="raiting">
-                <span class="stars">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
-                <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+              <span class="product-card-type">Гостиница</span>
+              <span class="price">От 1500 ₽</span>
+              <a href="#" class="product-card-button">Подробнее</a>
+              <button class="favorites-off">Избранное</button>
+              <span class="stars">
+                <ul>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                  <li>
+                  <img src="/images/icons/raiting-star.svg" class="star" alt="Оценка качества">
+                  </li>
+                </ul>
               </span>
-              <span class="number-raiting">Рейтинг 5.0</span>
-              </section>
+              <span class="product-card-rating">Рейтинг 5.0</span>
             </li>
           </ul>
           <ul class="pagination">
@@ -232,31 +271,30 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe">
-          <h2 class="visuality-hidden">Подписка на рассылку</h2>
-          <p class="subscribe-top">Подпишитесь на рассылку</p>
-          <p class="subscribe-bot">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <section class="subscribe-title-catalog">
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
               <input type="email" name="email" placeholder="Ваш e-mail" class="email">
               <input type="submit" value="Подписаться" name="e-mail" class="subscribe-button">
           </form>
         </section>
       </main>
-      <footer class="page-footer">
-        <ul class="contact-messenger">
+      <footer class="social">
+        <ul class="social-item">
           <li>
-            <a href="https://vk.com/htmlacademy"><img src="pictures/messenger/Vk.svg" alt="VK"></a>
+            <a href="https://vk.com/htmlacademy" class="social-link"><img src="pictures/messenger/Vk.svg" width="25" height="15" alt="VK"></a>
           </li>
           <li>
-            <a href="https://t.me/htmlacademy"><img src="pictures/messenger/Telegram.svg" alt="Telegram"></a>
+            <a href="https://t.me/htmlacademy" class="social-link"><img src="pictures/messenger/Telegram.svg" width="18" height="16" alt="Telegram"></a>
           </li>
           <li>
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="pictures/messenger/Youtube.svg" alt="Youtube"></a>
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link"><img src="pictures/messenger/Youtube.svg" width="23" height="18" alt="Youtube"></a>
           </li>
         </ul>
-        <a href="tel:+7(812)812-12-12" class="contact-phone">+7 (812) 812-12-12</a>
+        <a href="tel:+7(812)8121212" class="contact-phone">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru">
-          <img src="pictures/messenger/html-academy.svg" alt=" Логотип HTML Academy" class="htmlacademy">
+          <img src="pictures/messenger/html-academy.svg" width="117" height="34" alt=" Логотип HTML Academy" class="html-academy">
         </a>
       </footer>
     </div>
