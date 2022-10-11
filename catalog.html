@@ -44,8 +44,8 @@
         </nav>
       </header>
       <main class="main-inner">
-        <div class="wrapper-filter">
-          <h1 class="wrapper-filter-title">Гостиницы Седоны</h1>
+        <div class="top-wrapper">
+          <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a href="index.html" class="breadcrumbs-link">
@@ -61,7 +61,7 @@
           <section>
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-checkbox">
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -84,7 +84,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-radio">
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul>
                   <li class="catalog-filter-item">
@@ -120,17 +120,17 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="type-of-catalog">
-            <li class="type-of-item">
+            <li class="type-of-catalog-item">
               <a href="#" class="type-of-catalog-link">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
-            <li class="type-of-item">
+            <li class="type-of-catalog-item">
               <a href="#" class="type-of-catalog-link">
                 <span class="visually-hidden">Показать во весь экран</span>
               </a>
             </li>
-            <li class="type-of-item">
+            <li class="type-of-catalog-item">
               <a href="#" class="type-of-catalog-link">
                 <span class="visually-hidden">Показать список</span>
               </a>
@@ -149,7 +149,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
               <a href="#" class="product-card-details-link button">Подробнее</a>
-              <button class="product-card-button">Избранное</button>
+              <button type="button" class="product-card-button">Избранное</button>
               <ul class="product-card-stars">
                 <li class="product-card-star-item">
                   <img src="/images/icons/raiting-star.svg" class="product-card-stars-image" alt="Оценка качества.">
@@ -176,7 +176,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 5000 ₽</span>
               <a href="#" class="product-card-details-link button">Подробнее</a>
-              <button class="product-card-button">В Избранном</button>
+              <button type="button" class="product-card-button">В Избранном</button>
               <ul class="product-card-stars">
                 <li class="product-card-star-item">
                   <img src="/images/icons/raiting-star.svg" class="product-card-stars-image" alt="Оценка качества.">
@@ -203,7 +203,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 2500 ₽</span>
               <a href="#" class="product-card-details-link button">Подробнее</a>
-              <button class="product-card-button">Избранное</button>
+              <button type="button" class="product-card-button">Избранное</button>
               <ul class="product-card-stars">
                 <li class="product-card-star-item">
                   <img src="/images/icons/raiting-star.svg" class="product-card-stars-image" alt="Оценка качества.">
@@ -227,7 +227,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 1500 ₽</span>
               <a href="#" class="product-card-details-link button">Подробнее</a>
-              <button class="product-card-button">Избранное</button>
+              <button type="button" class="product-card-button">Избранное</button>
               <ul class="product-card-stars">
                 <li class="product-card-star-item">
                   <img src="/images/icons/raiting-star.svg" class="product-card-stars-image" alt="Оценка качества.">
@@ -261,11 +261,11 @@
           </ul>
         </section>
         <section class="subscription">
-          <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <p class="subscription-text">Подпишитесь на рассылку</p>
+          <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail" class="subscribe-input">
-            <button type="submit" name="e-mail" class="subscribe-button">Подписаться</button>
+            <input type="email" name="email" placeholder="Ваш e-mail" class="subscription-input">
+            <button type="submit" name="e-mail" class="subscription-button">Подписаться</button>
           </form>
         </section>
       </main>

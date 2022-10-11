@@ -213,7 +213,7 @@ body {
   text-align: center;
 }
 
-.main-headline-text {
+.main-headline-title {
   line-height: 36px;
   margin-bottom: 24px;
   height: 72px;
@@ -241,11 +241,57 @@ body {
   padding: 0;
 }
 
+.nested-list-advantages-item {
+  width: 400px;
+  height: 384px;
+  background-color: #83B3D31F;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0;
+}
+
+.nested-list-advantages-item:nth-child(2) {
+  background-color: #83B3D333;
+}
+
 /* Четвертая строка - список с картинками */
-.nested-list-images {
+.advantages-list-extra {
   display: flex;
   width: 1200px;
   padding: 0;
+}
+
+.advantages-list-extra-item {
+  width: 400px;
+  height: 384px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0;
+}
+
+.advantages-list-extra-item-titile {
+  padding-top: 183px;
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 24px;
+  width: 175px;
+  height: 56px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
+.advantages-list-extra-item-description {
+  font-weight: 400;
+  font-size: 18px;
+  width: 230px;
+  height: 63px;
+  margin-top: 0;
+  margin-bottom: 81px;
+  line-height: 21px;
 }
 
 .image-1 {
@@ -253,11 +299,6 @@ body {
   background-image: url("../images/card/icons/house.svg");
   background-repeat: no-repeat;
   background-position: 163px 80px;
-}
-
-.nested-item-text.under-icon {
-  padding-top: 183px;
-  margin-bottom: 3px;
 }
 
 .image-2 {
@@ -268,14 +309,10 @@ body {
 }
 
 .image-3 {
-  background-color: #83B3D333;
+  background-color: #83B3D31F;
   background-image: url("../images/card/icons/box.svg");
   background-repeat: no-repeat;
   background-position: 168px 78px;
-}
-
-.under-icon {
-  padding-top: 0;
 }
 
 .advantages-list-item {
@@ -283,24 +320,6 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 400px);
-}
-
-.nested-list-item {
-  width: 400px;
-  height: 384px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 0;
-}
-
-.advantage-12 {
-  background-color: #83B3D31F;
-}
-
-.advantage-20 {
-  background-color: #83B3D333;
 }
 
 .advantages-list-inner {
@@ -315,7 +334,7 @@ body {
   font-size: 0;
 }
 
-.advatage-image {
+.advantages-list-image-wrapper {
   grid-column: span 2;
   font-size: 0;
 }
@@ -332,7 +351,7 @@ body {
   line-height: 28px;
 }
 
-.nested-item-text {
+.nested-list-advantages-title {
   font-size: 24px;
   width: 175px;
   height: 56px;
@@ -343,7 +362,15 @@ body {
   line-height: 28px;
 }
 
-
+.nested-list-advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  width: 230px;
+  height: 63px;
+  margin-top: 0;
+  margin-bottom: 81px;
+  line-height: 21px;
+}
 
 /* Стайл на линии, Которые попросили удалить, но по моему, они могут понадобиться.
 .hr-white {
@@ -366,16 +393,6 @@ body {
 */
 
 .advantages-list-description {
-  font-weight: 400;
-  font-size: 18px;
-  width: 230px;
-  height: 63px;
-  margin-top: 0;
-  margin-bottom: 81px;
-  line-height: 21px;
-}
-
-.nested-item-description {
   font-weight: 400;
   font-size: 18px;
   width: 230px;
@@ -415,6 +432,7 @@ body {
   font-size: 22px;
 }
 
+/* Подписка на рассылку index */
 .subscribe {
   background-image: url(../images/pictures/subscribe-background.jpg);
   background-size: 1200px;
@@ -478,7 +496,7 @@ body {
 
 /*style-catalog*/
 
-.wrapper-filter {
+.top-wrapper {
   background-image: url(../images/pictures/filter-background.jpg);
   background-size: 100% 100%;
   height: 412px;
@@ -486,7 +504,7 @@ body {
   color: #FFFFFF;
 }
 
-.wrapper-filter-title {
+.filter-title {
   font-size: 60px;
   padding-left: 70px;
   padding-top: 35px;
@@ -523,7 +541,62 @@ body {
   padding: 8px 26px;
 }
 
+/* Подписка на рассылку catalog */
 .subscription{
   text-align: center;
   background-size: 1200px;
+}
+
+.subscription-text {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 94px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.subscription-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding-top: 0;
+  padding-bottom: 32px;
+  margin-top: 0;
+}
+
+.subscription-input {
+  width: 412px;
+  height: 14px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 19px;
+  padding-left: 20px;
+  outline: #FFFFFF;
+  border-style: none;
+  margin-bottom: 103px;
+  margin-top: 0;
+  margin-right: -4px;
+  position: relative;
+  bottom: 1px;
+  background-color: #F2F2F2;
+}
+
+.subscription-button {
+  width: 232px;
+  height: 52px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #82B3D3;
+  text-align: center;
+  border-style: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: 0;
 }
