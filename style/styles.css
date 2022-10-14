@@ -16,8 +16,8 @@
    url(../fonts/ptsans-400.woff2);
 }
 
-.visually-hidden {
-  display: none;
+html {
+  height: 100%;
 }
 
 body {
@@ -28,22 +28,46 @@ body {
   background-color: #F2F2F2;
 }
 
-/*style-header*/
-
-.current {
-  border-bottom: 2px solid #756257;
-  padding-bottom: 18px;
-}
-
-.catalog {
-  width: 93px;
-  top: 63px;
+.visually-hidden {
+  display: none;
 }
 
 .content {
   margin: 0 auto;
   width: 1200px;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-footer {
+  flex-shrink: 0;
+}
+
+.main-page {
+  flex-grow: 1;
+}
+
+.main-inner {
+  flex-grow: 1;
+}
+
+/*style-header*/
+
+.logo-link {
+  z-index: 10;
+}
+
+.current {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 18px;
+  z-index: 10;
+}
+
+.catalog {
+  width: 93px;
+  top: 63px;
 }
 
 .button {
@@ -159,13 +183,13 @@ body {
 .vk {
   background-image: url("../images/pictures/messenger/vk.svg");
   width: 24px;
-  height: 14px;
+  height: 15px;
 }
 
 .telegram {
   background-image: url("../images/pictures/messenger/telegram.svg");
   width: 18px;
-  height: 15px;
+  height: 16px;
 }
 
 .youtube {
@@ -217,7 +241,7 @@ body {
 .main-headline-title {
   line-height: 36px;
   margin-bottom: 24px;
-  height: 72px;
+  min-height: 72px;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -544,7 +568,6 @@ body {
   padding-top: 5px;
 }
 
-
 .select-control {
   width: 292px;
   height: 49px;
@@ -651,11 +674,9 @@ body {
   display: flex;
 }
 
-
 .product-card-star-item {
   margin-right: 6px;
 }
-
 
 .product-card-star-item:last-child {
   margin-right: 0;
@@ -668,11 +689,37 @@ body {
   background-color: #F2F2F2;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
-  margin-left: 160px;
   white-space: nowrap;
   text-transform: uppercase;
 }
 
+.product-card-wrapper-raiting {
+  display: flex;
+  margin-top: 16px;
+  padding: 0;
+  height: 37px
+}
+
+.product-card-stars {
+  min-width: 90px;
+  height: 17px;
+  background-image: url("/images/icons/raiting-star.svg");
+  background-size: 19px;
+  background-repeat: space;
+  font-size: 0;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+
+.product-card-stars.three {
+  min-width: 67px;
+  margin-right: 93px;
+}
+
+.product-card-stars.two {
+  min-width: 44px;
+  margin-right: 116px;
+}
 
 /* Пагинация */
 
@@ -690,6 +737,7 @@ body {
 }
 
 /* Подписка на рассылку catalog */
+
 .subscription{
   text-align: center;
   background-size: 1200px;
