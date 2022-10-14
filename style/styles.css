@@ -57,12 +57,7 @@ body {
 
 .logo-link {
   z-index: 10;
-}
-
-.current {
-  border-bottom: 2px solid #756257;
-  padding-bottom: 18px;
-  z-index: 10;
+  margin-right: 23px;
 }
 
 .catalog {
@@ -110,6 +105,7 @@ body {
 .navigation-link {
   text-decoration: none;
   color: black;
+  padding: 20px 16px;
 }
 
 .navigation-favorites {
@@ -124,8 +120,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 32px;
   margin-top: 19px;
+  padding-inline-start: 0;
 }
 
 .user-menu {
@@ -133,9 +129,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  gap: 25px;
   padding-right: 70px;
-  margin-top: -2px;
+  margin-top: 5px;
 }
 
 .new-favorites {
@@ -156,6 +151,16 @@ body {
 
 .search {
   margin-top: 5px;
+  margin-right: -2px;
+}
+
+.navigation-searh {
+  padding: 26px 13px 18px 11px;
+}
+
+.navigation-favorites {
+  padding: 29px 6px 15px 14px;
+  margin-right: 19px;
 }
 
 /*style-footer*/
@@ -220,7 +225,7 @@ body {
   width: 100%;
   height: 485px;
   margin-bottom: 69px;
-  margin-top: -17px;
+  margin-top: -10px;
 }
 
 .welcome-image {
@@ -536,7 +541,7 @@ body {
   font-size: 60px;
   padding-left: 70px;
   padding-top: 35px;
-  margin-top: -17px;
+  margin-top: -10px;
 }
 
 .breadcrumbs {
@@ -725,7 +730,10 @@ body {
 
 .pagination {
   display: flex;
-  gap: 8px;
+  margin-left: 30px;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 40px;
 }
 
 .pagination-link {
