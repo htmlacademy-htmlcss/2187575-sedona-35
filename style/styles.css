@@ -358,7 +358,7 @@ body {
 
 .advantages-list-extra-item {
   width: 230px;
-  height: 223px;
+  min-height: 223px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -383,7 +383,6 @@ body {
   color: #333333;
   font-size: 18px;
   width: 230px;
-  height: 63px;
   line-height: 21px;
 }
 
@@ -712,11 +711,11 @@ body {
   margin-top: 10px;
 }
 
-.product-card-stars.three {
+.product-card-stars.three-stars {
   min-width: 67px;
 }
 
-.product-card-stars.two {
+.product-card-stars.two-stars {
   min-width: 44px;
 }
 
@@ -724,10 +723,10 @@ body {
 
 .pagination {
   display: flex;
-  margin-left: 30px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-top: 40px;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -736,6 +735,20 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.pagination-link.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link.pagination-light {
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 /* Подписка на рассылку catalog */
