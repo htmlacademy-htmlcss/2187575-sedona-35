@@ -173,13 +173,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social {
+  max-width: 150px;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 27px;
+  flex-wrap: wrap;
 }
 
 .social-link {
