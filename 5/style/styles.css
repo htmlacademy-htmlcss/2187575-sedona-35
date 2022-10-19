@@ -173,13 +173,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social {
+  max-width: 150px;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 27px;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -552,6 +555,13 @@ body {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+  background-image: url("../images/icons/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 5px;
+}
+
+.breadcrumbs-item:first-child {
+  margin-right: 29px;
 }
 
 .breadcrumbs-item .breadcrumbs-link {
@@ -616,6 +626,42 @@ body {
   border-color: #000000;
 }
 
+.filter-form-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter-submit-button {
+  background: #82B3D3;
+  border-radius: 4px;
+  border-style: none;
+  width: 191px;
+  height: 36px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-reset-button {
+  background-color: rgba(0, 0, 255, 0);
+  border-radius: 4px;
+  border-style: none;
+  width: 191px;
+  height: 36px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
 /* Карточки */
 
 .catalog {
@@ -625,14 +671,17 @@ body {
 .product-cards {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 18px;
   padding-inline-start: 0;
   margin: 0;
+  margin-bottom: 39px;
+  padding-bottom: 39px;
+  border-bottom: 1px #E6E6E6 solid;
 }
 
 .product-card {
   width: 300px;
-  height: 398px;
   border: 1px #E6E6E6 solid;
   border-radius: 4px;
   padding: 20px;
@@ -689,7 +738,6 @@ body {
   padding: 8px 20px;
   color: #FFFFFF;
   white-space: nowrap;
-
 }
 
 .product-card-button.active {
@@ -741,6 +789,8 @@ body {
   padding: 0;
   list-style-type: none;
   gap: 8px;
+  position: relative;
+  left: 1px;
 }
 
 .pagination-link {
