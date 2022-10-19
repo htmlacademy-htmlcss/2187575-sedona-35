@@ -107,8 +107,10 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="catalog-filter-submit-button" type="submit">Применить</button>
-              <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
+              <div class="filter-form-button">
+                <button class="catalog-filter-submit-button" type="submit">Применить</button>
+                <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -200,7 +202,7 @@
               <button type="button" class="product-card-button">В избранное</button>
               </div>
               <div class="product-card-wrapper-raiting">
-                <span class="product-card-stars three">Трёхзвёздночный отель.</span>
+                <span class="product-card-stars three-stars">Трёхзвёздночный отель.</span>
                 <span class="product-card-rating">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -220,14 +222,14 @@
               <button type="button" class="product-card-button">В избранное</button>
               </div>
               <div class="product-card-wrapper-raiting">
-                <span class="product-card-stars two">Двухзвёздночный отель.</span>
+                <span class="product-card-stars two-stars">Двухзвёздночный отель.</span>
                 <span class="product-card-rating">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
           <ul class="pagination">
-            <li class="pagination-item-active">
-              <a class="pagination-link pagintaion-current" href="#">1</a>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -238,8 +240,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item-light">
-              <a class="pagination-link" href="#">...</a>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-light" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -258,13 +260,19 @@
       <footer class="page-footer">
         <ul class="social">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link vk"><span class="visually-hidden">Перейти на на сайт В Контакте.</span></a>
+            <a href="https://vk.com/htmlacademy" class="social-link vk">
+              <span class="visually-hidden">Перейти на на сайт В Контакте.</span>
+            </a>
           </li>
           <li class="social-item">
-            <a href="https://t.me/htmlacademy" class="social-link telegram"><span class="visually-hidden">Перейти в Телеграм.</span></a>
+            <a href="https://t.me/htmlacademy" class="social-link telegram">
+              <span class="visually-hidden">Перейти в Телеграм.</span>
+            </a>
           </li>
           <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link youtube"><span class="visually-hidden">Перейти на Ютуб.</span></a>
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link youtube">
+              <span class="visually-hidden">Перейти на Ютуб.</span>
+            </a>
           </li>
         </ul>
         <a href="tel:+7(812)8121212" class="contact-phone">+7 (812) 812-12-12</a>
