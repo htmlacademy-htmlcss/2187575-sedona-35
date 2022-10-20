@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="user-menu-item">
-              <a class="button want">Хочу сюда!</a>
+              <a href="#" class="button want">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -61,55 +61,59 @@
           <section class="filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="Бассеин" checked>
-                      Бассеин
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="Парковка" checked>
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип Жилья:</legend>
-                <ul>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="Гостиница" checked>
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="Мотель">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="Апартаменты">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <div class="filter-form-button">
-                <button class="catalog-filter-submit-button" type="submit">Применить</button>
-                <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
+              <div class="catalog-filter-wrapper">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="Бассеин" checked>
+                        Бассеин
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="Парковка" checked>
+                        Парковка
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="Wi-Fi">
+                        Wi-Fi
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="type-house" value="Гостиница" checked>
+                        Гостиница
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="type-house" value="Мотель">
+                        Мотель
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="type-house" value="Апартаменты">
+                        Апартаменты
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="catalog-filter-wrapper">
+                <div class="filter-form-button">
+                  <button class="catalog-filter-submit-button" type="submit">Применить</button>
+                  <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </section>

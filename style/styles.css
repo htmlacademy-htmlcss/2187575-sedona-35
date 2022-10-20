@@ -246,7 +246,7 @@ body {
 /* Хедлайн */
 
 .main-headline {
-  padding: 69px 20px 91px 20px;
+  padding: 69px 20px 89px 20px;
 }
 
 .main-headline-title {
@@ -258,7 +258,6 @@ body {
 }
 
 .main-headline-description {
-  height: 26px;
   font-weight: 400;
   font-size: 22px;
   color: #333333;
@@ -323,6 +322,7 @@ body {
   min-height: 384px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .nested-list-advantages-item {
@@ -341,7 +341,6 @@ body {
   margin-bottom: 22px;
   font-size: 24px;
   width: 175px;
-  min-height: 56px;
   text-transform: uppercase;
   line-height: 28px;
 }
@@ -351,7 +350,6 @@ body {
   font-size: 18px;
   color: #333333;
   width: 230px;
-  min-height: 63px;
   margin: 0;
   padding: 0;
   line-height: 21px;
@@ -466,7 +464,6 @@ body {
   margin: 0;
   margin-bottom: 54px;
   line-height: 26px;
-  min-height: 52px;
   font-weight: 400;
   color: #333333;
   font-size: 22px;
@@ -533,7 +530,7 @@ body {
 }
 
 /*style-catalog*/
-/* Значние height временно задано для удобства. При стилизации формы его нужно будет удалить. */
+/* Значние height в top-wrapper временно задано для удобства. При стилизации формы его нужно будет удалить. */
 
 .top-wrapper {
   background-image: url(../images/pictures/filter-background.jpg);
@@ -569,8 +566,62 @@ body {
   font-weight: 400;
 }
 
+/* Фильтры */
+
+.catalog-filter-wrapper {
+  display: flex;
+}
+
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group:not(:nth-child(2)) {
+  margin-right: 70px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-item {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Кнопки фильтра */
+
+.catalog-filter-reset-button,
+.catalog-filter-submit-button {
+  background-color: rgba(0, 0, 255, 0);
+  border-radius: 4px;
+  border-style: none;
+  width: 191px;
+  height: 36px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.catalog-filter-submit-button {
+  background: #82B3D3;
+  margin-bottom: 32px;
 }
 
 /* Сортировка */
@@ -629,37 +680,7 @@ body {
 .filter-form-button {
   display: flex;
   flex-direction: column;
-}
-
-.catalog-filter-submit-button {
-  background: #82B3D3;
-  border-radius: 4px;
-  border-style: none;
-  width: 191px;
-  height: 36px;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 8px 50px;
-  color: #FFFFFF;
-  white-space: nowrap;
-  margin-bottom: 32px;
-}
-
-.catalog-filter-reset-button {
-  background-color: rgba(0, 0, 255, 0);
-  border-radius: 4px;
-  border-style: none;
-  width: 191px;
-  height: 36px;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 8px 50px;
-  color: #FFFFFF;
-  white-space: nowrap;
+  align-self: flex-end;
 }
 
 /* Карточки */
