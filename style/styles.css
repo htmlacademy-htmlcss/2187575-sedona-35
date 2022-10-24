@@ -68,21 +68,6 @@ body {
   margin-right: 28px;
 }
 
-.button-want {
-  background: #756157;
-  border-radius: 4px;
-  border-style: none;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 8px 34px;
-  color: #FFFFFF;
-  text-decoration: none;
-  white-space: nowrap;
-  display: block;
-}
-
 .navigation-item {
   font-size: 20px;
   white-space: nowrap;
@@ -101,9 +86,21 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   text-decoration: none;
   color: black;
   padding: 20px 16px;
+}
+
+.navigation-link.current::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 15px 0 16px;
+  height: 2px;
+  content: "";
+  background-color: #756257;
 }
 
 .navigation-favorites {
@@ -145,6 +142,20 @@ body {
   border-radius: 50%;
 }
 
+.button-want {
+  border-radius: 4px;
+  border-style: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  color: #FFFFFF;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+}
+
 /* svg в правом контейнере */
 
 .heart {
@@ -178,10 +189,56 @@ body {
   margin-right: 21px;
 }
 
+/* Цветные кнопки и их состояния */
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus-visible {
+ outline: 0;
+ background-color: #615048;
+}
+
+.button-brown:active {
+  background-color: #756157;
+  color: #FFFFFF30;
+}
+
+.button-brown:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-blue:hover {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  background-color: #82B3D3;
+  color: #FFFFFF30;
+}
+
+.button-blue:focus-visible {
+  outline: 0;
+  background-color: #68A2CA;
+}
+
+.button-blue:disabled {
+  background-color: #E5E5E5;
+}
+
 /*style-footer*/
 
 .page-footer {
-  padding: 40px 69px 30px 81px;
+  padding: 40px 69px 30px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,30 +250,76 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 27px;
   flex-wrap: wrap;
 }
 
 .social-link {
   display: inline-block;
+  position: relative;
+  width: 47px;
+  height: 40px;
 }
 
-.vk {
-  background-image: url("../images/pictures/messenger/vk.svg");
-  width: 24px;
-  height: 15px;
+.social-link:focus-visible {
+  outline: 0;
 }
 
-.telegram {
-  background-image: url("../images/pictures/messenger/telegram.svg");
-  width: 18px;
-  height: 16px;
+.social-link:focus-visible svg {
+  fill: #68A2CA;
 }
 
-.youtube {
-  background-image: url("../images/pictures/messenger/youtube.svg");
-  width: 22px;
-  height: 17px;
+.social-vk {
+  fill: #83B3D3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.social-vk:hover {
+  fill: #68A2CA;
+}
+
+.social-vk:active {
+  fill: #68A2CA4D;
+}
+
+.social-telegram {
+  fill: #83B3D3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1px;
+  margin: auto;
+}
+
+.social-telegram:hover {
+  fill: #68A2CA;
+}
+
+.social-telegram:active {
+  fill: #68A2CA4D;
+}
+
+.social-youtube {
+  fill: #83B3D3;
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  right: 0;
+  left: 2px;
+  margin: auto;
+}
+
+.social-youtube:hover {
+  fill: #68A2CA;
+}
+
+.social-youtube:active {
+  fill: #68A2CA4D;
 }
 
 .contact-phone {
@@ -225,13 +328,43 @@ body {
   text-decoration: none;
   color: #000000;
   position: relative;
-  left: 8px;
+  left: 1px;
   bottom: 1px;
+}
+
+.contact-phone:hover {
+  color: #756157;
+}
+
+.contact-phone:focus-visible{
+  outline: 0;
+  color: #756157;
+}
+
+.contact-phone:active {
+  color: #7561574D;
 }
 
 .copyright {
   position: relative;
+  right: 1px;
   top: 1px;
+}
+
+.copyright-htmlacademy:hover path {
+  fill: #756157;
+}
+
+.copyright:focus-visible {
+  outline: 0;
+}
+
+.copyright:focus-visible path {
+  fill: #756157;
+}
+
+.copyright-htmlacademy:active path {
+  fill: #7561574D;
 }
 
 /*style-index*/
@@ -306,14 +439,27 @@ body {
 }
 
 .advantages-list-title {
+  position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 61px;
   font-size: 24px;
   width: 175px;
   min-height: 56px;
   text-transform: uppercase;
   line-height: 28px;
+}
+
+.advantages-list-title::before{
+  position: absolute;
+  top: 85px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 57px 0 57px;
+  height: 2px;
+  content: "";
+  background-color: #FFFFFF4D;
 }
 
 .advantages-list-description {
@@ -343,18 +489,30 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   padding: 104px 85px 101px;
 }
 
 .nested-list-advantages-title {
+  position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 61px;
   font-size: 24px;
   width: 175px;
   text-transform: uppercase;
   line-height: 28px;
+}
+
+.nested-list-advantages-title::before{
+  position: absolute;
+  top: 85px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 57px 0 57px;
+  height: 2px;
+  content: "";
+  background-color: #0000004D;
 }
 
 .nested-list-advantages-description {
@@ -430,26 +588,6 @@ body {
   background-position: 168px 78px;
 }
 
-/* Стайл на линии, Которые попросили удалить, но по моему, они могут понадобиться.
-.hr-white {
-  height: 2px;
-  width: 60px;
-  background-color: #FFFFFF4D;
-  border-style: none;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-.hr-black {
-  height: 2px;
-  width: 60px;
-  background-color: #0000004D;
-  border-style: none;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-*/
-
 /* Поиск Гостиницы. */
 
 .search-hotel {
@@ -462,7 +600,6 @@ body {
   line-height: 36px;
   padding: 8px 50px;
   display: inline-block;
-  background: #756157;
   border-radius: 4px;
   border-style: none;
   font-family: 'PT Sans', sans-serif;
@@ -509,7 +646,7 @@ body {
 .breadcrumbs {
   display: flex;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   padding: 0;
   background-image: url("../images/icons/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
@@ -517,7 +654,7 @@ body {
 }
 
 .breadcrumbs-item:first-child {
-  margin-right: 29px;
+  margin-right: 28px;
 }
 
 .breadcrumbs-item .breadcrumbs-link {
@@ -536,8 +673,14 @@ body {
   justify-content: space-between;
 }
 
+.catalog-filter-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-group:not(:nth-child(2)) {
-  margin-right: 70px;
+  margin-right: 66px;
 }
 
 .catalog-filter-list {
@@ -560,6 +703,14 @@ body {
   line-height: 23px;
 }
 
+.control {
+  cursor: pointer;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
 /* Кнопки фильтра */
 
 .catalog-filter-reset-button,
@@ -575,6 +726,25 @@ body {
   color: #FFFFFF;
   white-space: nowrap;
   cursor: pointer;
+}
+
+/* Состояния кнопки "reset" */
+
+.catalog-filter-reset-button:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-reset-button:focus-visible {
+  outline: 3px #83B3D3 solid;
+  outline-offset: 0;
+}
+
+.catalog-filter-reset-button:active {
+  color: #FFFFFF30;
+}
+
+.catalog-filter-reset-button:disabled{
+  color: #FFFFFF10;
 }
 
 .catalog-filter-submit-button {
@@ -617,7 +787,6 @@ body {
 .type-of-catalog {
   margin: 0;
   display: flex;
-
 }
 
 .type-of-catalog-link-image {
@@ -625,6 +794,22 @@ body {
   border: 2px #E5E5E5 solid;
   border-radius: 4px;
   margin-right: 8px;
+}
+
+.type-of-catalog-link-image:hover {
+  border: 2px #000000 solid;
+}
+
+.type-of-catalog-link:focus-visible {
+  outline: 0;
+}
+
+.type-of-catalog-link:focus-visible svg{
+  border: 2px #68A2CA solid;
+}
+
+.type-of-catalog-link-image:active {
+  border: 2px #000000 solid;
 }
 
 .type-of-catalog-link-image:last-child {
@@ -703,7 +888,6 @@ body {
 
 .product-card-details-link {
   padding: 8px 26px;
-  background: #756157;
   border-radius: 4px;
   border-style: none;
   font-family: 'PT Sans', sans-serif;
@@ -716,7 +900,6 @@ body {
 }
 
 .product-card-button {
-  background: #82B3D3;
   border-radius: 4px;
   border-style: none;
   font-family: 'PT Sans', sans-serif;
@@ -728,9 +911,28 @@ body {
   cursor: pointer;
 }
 
+/* Состояния кнопки "В избранном" */
 .product-card-button.active {
   background-color: #7DB54F;
   padding: 8px 18px;
+}
+
+.product-card-button.active:hover {
+  background-color: #6C9E42;
+}
+
+.product-card-button.active:focus-visible {
+  outline: 0;
+  background-color: #6C9E42;
+}
+
+.product-card-button.active:active {
+  background-color: #7DB54F;
+  color: #FFFFFF30;
+}
+
+.product-card-button.active:disabled {
+  background-color: #E5E5E5;
 }
 
 .product-card-rating {
@@ -793,14 +995,53 @@ body {
   text-align: center;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+  outline: 1px #82B3D3 solid;
+}
+
+.pagination-link:focus-visible {
+  background-color: #68A2CA;
+  outline: 1px #82B3D3 solid;
+  outline-offset: 0;
+}
+
+.pagination-link:active {
+  color: #FFFFFF30;
+}
+
 .pagination-link.pagination-current {
   color: #000000;
   background-color: #F2F2F2;
 }
 
+.pagination-link.pagination-current:hover {
+  outline: 0;
+}
+
+.pagination-link.pagination-current:focus-visible {
+  outline: 0;
+}
+
+.pagination-link.pagination-current:active {
+  outline: 0;
+}
+
 .pagination-link.pagination-light {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.pagination-link.pagination-light:hover {
+  outline: 0;
+}
+
+.pagination-link.pagination-light:focus-visible {
+  outline: 0;
+}
+
+.pagination-link.pagination-light:active {
+  outline: 0;
 }
 
 /* Подписка на рассылку index + catalog*/
