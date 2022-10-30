@@ -198,6 +198,7 @@ body {
 
 .button-brown:hover {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .button-brown:focus-visible {
@@ -220,6 +221,7 @@ body {
 
 .button-blue:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .button-blue:active {
@@ -744,7 +746,7 @@ body {
 
 /* Состояния чекбоксов */
 
-.control-input[type=checkbox]:checked + .control-mark {
+.control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/icons/checked-checkbox.svg");
   background-repeat: no-repeat;
   background-position: 4px 6px;
@@ -1134,6 +1136,7 @@ body {
 
 .product-card-button.active:hover {
   background-color: #6C9E42;
+  cursor: pointer;
 }
 
 .product-card-button.active:focus-visible {
@@ -1333,4 +1336,371 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   cursor: pointer;
+}
+
+/* Модальное окно */
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 11;
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  width: 577px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  display: flex;
+}
+
+.modal-close-icon {
+  margin: auto;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.modal-close-button:focus-visible {
+  outline: 3px #83B3D3 solid;
+}
+
+.modal-close-button:active svg {
+  opacity: 0.3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0 0 64px 0;
+  text-transform: uppercase;
+}
+
+.date-selection,
+.people-selection {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.date-selection-list,
+.people-selection-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.date-selection-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.arival-date-title,
+.departure-date-title,
+.people-selection-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.arival-date-input,
+.departure-date-input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  width: 362px;
+  height: 24px;
+  padding: 12px 58px 12px 20px;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: 400px center;
+}
+
+.arival-date-wrapper,
+.departure-date-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-input {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+.error {
+  color: #FF5757;
+}
+
+.people-selection-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people-selection-item {
+  display: flex;
+}
+
+.people-selection-item:last-child {
+  margin-bottom: 48px;
+}
+
+
+.people-selection-input {
+  display: flex;
+  justify-content: space-evenly;
+  width: 110px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  margin-left: 46px;
+}
+
+/* Кнопка минус */
+
+.button-minus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-minus::before {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 0;
+  top: 3px;
+  left: 10px;
+  right: 0;
+  width: 2px;
+  height: 14px;
+  background-color: #7561574D;
+  content: "";
+}
+
+.button-minus:hover {
+  cursor: pointer;
+}
+
+.button-minus:hover:before {
+  background-color: #000000;
+}
+
+.button-minus:focus-visible {
+  outline: 3px #82B3D3 solid;
+}
+
+.button-minus:focus-visible:before {
+  background-color: #000000;
+}
+
+.button-minus:active:before {
+  background-color: #7561574D;
+}
+
+/* Кнопка плюс */
+
+.button-plus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-plus::before {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 0;
+  top: 3px;
+  left: 9px;
+  right: 0;
+  width: 2px;
+  height: 14px;
+  background-color: #7561574D;
+  content: "";
+}
+
+.button-plus::after {
+  position: absolute;
+  bottom: 0;
+  top: 3px;
+  left: 9px;
+  right: 0;
+  width: 2px;
+  height: 14px;
+  background-color: #7561574D;
+  content: "";
+}
+
+.button-plus:hover {
+  cursor: pointer;
+}
+
+.button-plus:hover:before,
+.button-plus:hover:after {
+  background-color: #000000;
+}
+
+.button-plus:focus-visible {
+  outline: 3px #82B3D3 solid;
+}
+
+.button-plus:focus-visible:before,
+.button-plus:focus-visible:after {
+  background-color: #000000;
+}
+
+.button-plus:active:before,
+.button-plus:active:after {
+  background-color: #7561574D;
+}
+
+/* Инпут */
+
+.people-amount {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  width: 31px;
+  height: 46px;
+  border: none;
+  background-color: #F2F2F2;
+  text-align: center;
+  margin: 0;
+}
+
+.people-amount::-webkit-outer-spin-button,
+.people-amount::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.modal-submit-button {
+  width: 577px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 17px 77px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Тултип */
+
+.people-selection-title-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-right: 38px;
+ }
+
+.tooltip {
+  width: 86px;
+  height: 26px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.tooltip-button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+  display: block;
+  background-color: #83B3D3;
+}
+
+.tooltip-button:hover {
+  cursor: pointer;
+}
+
+.tooltip-button:hover + .tooltip-text {
+  display: block;
+}
+
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text {
+  width: 216px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 20px 18px 23px 22px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  left: 49%;
+  transform: translateX(-61%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-text:after {
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  transform: translateX(21px);
 }
