@@ -196,62 +196,60 @@
               7.49057L14.4905 1.78288Z" fill="black"/>
             </svg>
           </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
-              <fieldset class="date-selection">
-                <ul class="date-selection-list">
-                  <li class="date-selection-item">
-                    <label class="arival-date-title" for="arival-date">Дата Заезда:</label>
-                    <div class="arival-date-wrapper">
-                      <input class="arival-date-input" type="text" name="arival-date" placeholder="Укажите дату" value="27 апреля 2020">
-                      <span class="description-input error">Мы не можем отправить вас в прошлое.</span>
-                    </div>
-                  </li>
-                  <li class="date-selection-item">
-                    <label class="departure-date-title" for="departure-date">Дата Выезда:</label>
-                    <div class="departure-date-wrapper">
-                      <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023">
-                      <span class="description-input">На эти даты есть свободные номера. Пока есть.</span>
-                    </div>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="people-selection">
-                <ul class="people-selection-list">
-                  <li class="people-selection-item">
-                    <lebel class="people-selection-title" for="adults">Взрослые:</lebel>
-                    <div class="people-selection-input">
-                      <button type="button" name="minus" class="button-minus"></button>
-                      <input class="people-amount" type="number" name="adults" value="2">
-                      <button type="button" name="plus" class="button-plus"></button>
-                    </div>
-                  </li>
-                  <li class="people-selection-item">
-                    <span class="people-selection-title-label">
-                      <lebel class="people-selection-title" for="children">Дети:</lebel>
-                      <span class="tooltip">
-                        <button class="tooltip-button" aria-labelledby="tooltip-label-amount">
-                          <svg class="tooltip-button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" fill="#fff"/>
-                          </svg>
-                        </button>
-                        <span class="tooltip-text" role="tooltip" id="tooltip-label-amount">
-                          Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
-                        </span>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+            <fieldset class="form-selection">
+              <ul class="date-selection-list">
+                <li class="date-selection-item">
+                  <label class="arival-date-title" for="arival-date">Дата Заезда:</label>
+                  <div class="arival-date-wrapper">
+                    <input class="arival-date-input" type="text" name="arival-date" placeholder="Укажите дату" value="27 апреля 2020">
+                    <span class="description-input error">Мы не можем отправить вас в прошлое.</span>
+                  </div>
+                </li>
+                <li class="date-selection-item">
+                  <label class="departure-date-title" for="departure-date">Дата Выезда:</label>
+                  <div class="departure-date-wrapper">
+                    <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023">
+                    <span class="description-input">На эти даты есть свободные номера. Пока есть.</span>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-selection">
+              <ul class="people-selection-list">
+                <li class="people-selection-item">
+                  <lebel class="people-selection-title" for="adults">Взрослые:</lebel>
+                  <div class="people-selection-input">
+                    <button type="button" name="minus" class="button-minus"></button>
+                    <input class="people-amount" type="number" name="adults" value="2">
+                    <button type="button" name="plus" class="button-plus"></button>
+                  </div>
+                </li>
+                 <li class="people-selection-item">
+                  <span class="people-selection-title-label">
+                    <lebel class="people-selection-title" for="children">Дети:</lebel>
+                    <span class="tooltip">
+                      <button class="tooltip-button" aria-labelledby="tooltip-label-amount">
+                        <svg class="tooltip-button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" fill="#fff"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-amount">
+                        Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
                       </span>
                     </span>
-                    <div class="people-selection-input">
-                      <button type="button" name="minus" class="button-minus"></button>
-                      <input class="people-amount" type="number" name="children" value="2">
-                      <button type="button" name="plus" class="button-plus"></button>
-                    </div>
-                  </li>
-                </ul>
-                <button type="submit" name="search" class="modal-submit-button button-blue">Найти</button>
-              </fieldset>
-            </form>
-          </section>
+                  </span>
+                  <div class="people-selection-input">
+                    <button type="button" name="minus" class="button-minus"></button>
+                    <input class="people-amount" type="number" name="children" value="2">
+                    <button type="button" name="plus" class="button-plus"></button>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" name="search" class="modal-submit-button button-blue">Найти</button>
+          </form>
         </div>
       </div>
     </div>
