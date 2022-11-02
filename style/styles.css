@@ -1178,7 +1178,7 @@ body {
 .product-card-stars {
   min-width: 91px;
   height: 17px;
-  background-image: url("/images/icons/raiting-star.svg");
+  background-image: url("../images/icons/raiting-star.svg");
   background-size: 19px;
   background-repeat: space;
   font-size: 0;
