@@ -830,14 +830,17 @@ body {
   display: flex;
 }
 
+.catalog-filter-label {
+  margin-bottom: 44px;
+  margin-right: 2px;
+}
+
 .range-input {
   width: 83px;
   height: 24px;
   padding: 12px 20px;
   padding-right: 40px;
   border: none;
-  margin-bottom: 44px;
-  margin-right: 2px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1045,10 +1048,6 @@ body {
 
 /* Карточки */
 
-.catalog {
-  padding: 0 70px 60px 69px;
-}
-
 .product-cards {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1056,9 +1055,14 @@ body {
   row-gap: 18px;
   padding-inline-start: 0;
   margin: 0;
-  margin-bottom: 39px;
-  padding-bottom: 39px;
+  padding: 0 71px 39px 69px;
+}
+
+.product-cards::after {
+  width: 1060px;
   border-bottom: 1px #E6E6E6 solid;
+  content: "";
+  transform: translateX(-359px) translateY(40px);
 }
 
 .product-card {
@@ -1194,7 +1198,7 @@ body {
 .pagination {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 40px 71px 60px 69px;
   list-style-type: none;
   gap: 8px;
   position: relative;
@@ -1235,6 +1239,7 @@ body {
 
 .pagination-link.pagination-current:hover {
   outline: 0;
+  cursor: initial;
 }
 
 .pagination-link.pagination-current:focus-visible {
@@ -1252,6 +1257,7 @@ body {
 
 .pagination-link.pagination-light:hover {
   outline: 0;
+  cursor: initial;
 }
 
 .pagination-link.pagination-light:focus-visible {
@@ -1409,8 +1415,7 @@ body {
   text-transform: uppercase;
 }
 
-.date-selection,
-.people-selection {
+.form-selection {
   padding: 0;
   margin: 0;
   border: none;
