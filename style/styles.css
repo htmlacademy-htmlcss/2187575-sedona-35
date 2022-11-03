@@ -654,7 +654,7 @@ body {
   background-position: 23px 5px;
 }
 
-.breadcrumbs-item:first-child {
+.breadcrumbs-item:not(:last-child) {
   margin-right: 28px;
 }
 
@@ -704,7 +704,7 @@ body {
 }
 
 .catalog-filter-item {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -754,6 +754,10 @@ body {
 
 .control-input:focus-visible + .control-mark {
   outline: 3px #83B3D3 solid;
+}
+
+.control-input:active + .control-mark {
+  outline: 2px #83B3D3 solid;
 }
 
 /* Радио */
@@ -971,7 +975,7 @@ body {
   height: 49px;
   border: 2px #E5E5E5 solid;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
