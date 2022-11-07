@@ -837,11 +837,7 @@ body {
   opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark {
-  opacity: 0.3;
-  cursor: default;
-}
-
+.control-input:disabled + .control-mark,
 .control-input:disabled + .control-mark + .control-label {
   opacity: 0.3;
   cursor: default;
