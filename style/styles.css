@@ -1316,6 +1316,7 @@ body {
   left: 1px;
 
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 40px 71px 60px 69px;
   gap: 8px;
