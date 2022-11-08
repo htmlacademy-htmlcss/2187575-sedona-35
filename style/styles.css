@@ -1172,15 +1172,6 @@ body {
   padding: 0 71px 39px 69px;
 }
 
-.product-cards::after {
-  transform: translateX(-359px) translateY(40px);
-
-  width: 1060px;
-
-  border-bottom: 1px #E6E6E6 solid;
-  content: "";
-}
-
 .product-card {
   width: 300px;
   padding: 20px;
@@ -1325,11 +1316,20 @@ body {
   left: 1px;
 
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 40px 71px 60px 69px;
   gap: 8px;
 
   list-style-type: none;
+}
+
+.pagination::before {
+  position: absolute;
+  transform: translateY(-40px);
+  width: 1060px;
+  border-bottom: 1px #E6E6E6 solid;
+  content: "";
 }
 
 .pagination-link {
