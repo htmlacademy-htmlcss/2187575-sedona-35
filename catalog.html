@@ -4,30 +4,31 @@
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" sizes="32x32" href="images/favicons/favicon.png">
   </head>
   <body>
     <div class="content">
       <header>
         <nav class="navigation">
           <div class="main-menu">
-            <a href="index.html" class="logo-link">
-              <img src="images/logo.svg" width="140" height="70"  alt="Логотип Седона." class="logo">
+            <a class="logo-link" href="index.html">
+              <img class="logo" src="images/logo.svg" width="140" height="70"  alt="Логотип Седона.">
             </a>
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a href="index.html" class="navigation-link">Главная</a>
+                <a class="navigation-link" href="index.html">Главная</a>
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-link">О Седоне</a>
+                <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-link current">Гостиницы</a>
+                <a class="navigation-link current" href="#">Гостиницы</a>
               </li>
             </ul>
           </div>
           <ul class="user-menu">
             <li class="user-menu-item">
-              <a href="#" class="navigation-searh">
+              <a class="navigation-searh" href="#">
                 <svg class="search" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1
                   1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5
@@ -37,7 +38,7 @@
               </a>
             </li>
             <li class="user-menu-item">
-              <a href="#" class="navigation-favorites">
+              <a class="navigation-favorites" href="#">
                 <svg class="heart" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8
                   .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4
@@ -47,7 +48,7 @@
               </a>
             </li>
             <li class="user-menu-item">
-              <a href="#" class="button-want button-brown" >Хочу сюда!</a>
+              <a class="button-want button-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -57,8 +58,11 @@
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a href="index.html" class="breadcrumbs-link">
-                <img src="images/icons/in_home.svg" alt="На главную." class="breadcrumbs-image">
+              <a class="breadcrumbs-link" href="index.html">
+                <svg class="breadcrumbs-image" role="img" aria-label="Домашняя страница." width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+                </svg>
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -140,10 +144,10 @@
                     </div>
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px">
-                        <button type="button" class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Переключатель минимальной цены</span>
                         </button>
-                        <button type="button" class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Переключатель максимальной цены</span>
                         </button>
                       </div>
@@ -168,7 +172,7 @@
               </select>
               <ul class="type-of-catalog">
                 <li class="type-of-catalog-item">
-                  <a href="#" class="type-of-catalog-link">
+                  <a class="type-of-catalog-link" href="#">
                     <svg class="type-of-catalog-link-image active" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4 0H0V6H4V0Z" fill="black"/>
                       <path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -181,7 +185,7 @@
                   </a>
                 </li>
                 <li class="type-of-catalog-item">
-                  <a href="#" class="type-of-catalog-link">
+                  <a class="type-of-catalog-link" href="#">
                     <svg class="type-of-catalog-link-image" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 12H0V14H16V12Z" fill="black"/>
                       <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
@@ -190,7 +194,7 @@
                   </a>
                 </li>
                 <li class="type-of-catalog-item">
-                  <a href="#" class="type-of-catalog-link">
+                  <a class="type-of-catalog-link" href="#">
                     <svg class="type-of-catalog-link-image" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2 0H0V2H2V0Z" fill="black"/>
                       <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -211,7 +215,7 @@
           <ul class="product-cards">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="images/product-card/hotel-1.jpg" width="300" height="212" class="product-card-image" alt="Отель Amara Resort & Spa.">
+                <img class="product-card-image" src="images/product-card/hotel-1.jpg" width="300" height="212" alt="Отель Amara Resort & Spa.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -221,8 +225,8 @@
                 <span class="product-card-price">От 4000 ₽</span>
               </div>
               <div class="product-card-wrapper-button">
-              <a href="#" class="product-card-details-link button-brown">Подробнее</a>
-              <button type="button" class="product-card-button button-blue">В избранное</button>
+              <a class="product-card-details-link button-brown" href="#">Подробнее</a>
+              <button class="product-card-button button-blue" type="button">В избранное</button>
               </div>
               <div class="product-card-wrapper-raiting">
                 <span class="product-card-stars">Четырёхзвёздночный отель.</span>
@@ -231,7 +235,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="images/product-card/hotel-2.jpg" width="300" height="212" class="product-card-image" alt="Отель Villas at Poco Diablo.">
+                <img class="product-card-image" src="images/product-card/hotel-2.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -241,8 +245,8 @@
                 <span class="product-card-price">От 5000 ₽</span>
               </div>
               <div class="product-card-wrapper-button">
-              <a href="#" class="product-card-details-link button-brown">Подробнее</a>
-              <button type="button" class="product-card-button active">В Избранном</button>
+              <a class="product-card-details-link button-brown" href="#">Подробнее</a>
+              <button class="product-card-button active" type="button">В Избранном</button>
               </div>
               <div class="product-card-wrapper-raiting">
                 <span class="product-card-stars">Четырёхзвёздночный отель.</span>
@@ -251,7 +255,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="images/product-card/hotel-3.jpg" width="300" height="212" class="product-card-image" alt="Отель Desert Quail Inn.">
+                <img class="product-card-image" src="images/product-card/hotel-3.jpg" width="300" height="212" alt="Отель Desert Quail Inn.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -261,8 +265,8 @@
                 <span class="product-card-price">От 2500 ₽</span>
               </div>
               <div class="product-card-wrapper-button">
-              <a href="#" class="product-card-details-link button-brown">Подробнее</a>
-              <button type="button" class="product-card-button button-blue">В избранное</button>
+              <a class="product-card-details-link button-brown" href="#">Подробнее</a>
+              <button class="product-card-button button-blue" type="button">В избранное</button>
               </div>
               <div class="product-card-wrapper-raiting">
                 <span class="product-card-stars three-stars">Трёхзвёздночный отель.</span>
@@ -271,7 +275,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img src="images/product-card/hotel-4.jpg" width="300" height="212" class="product-card-image" alt="Отель GreenTree Inn.">
+                <img class="product-card-image" src="images/product-card/hotel-4.jpg" width="300" height="212" alt="Отель GreenTree Inn.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">GreenTree Inn</h3>
@@ -281,8 +285,8 @@
                 <span class="product-card-price">От 1500 ₽</span>
               </div>
               <div class="product-card-wrapper-button">
-              <a href="#" class="product-card-details-link button-brown">Подробнее</a>
-              <button type="button" class="product-card-button button-blue">В избранное</button>
+              <a class="product-card-details-link button-brown" href="#">Подробнее</a>
+              <button class="product-card-button button-blue" type="button">В избранное</button>
               </div>
               <div class="product-card-wrapper-raiting">
                 <span class="product-card-stars two-stars">Двухзвёздночный отель.</span>
@@ -292,7 +296,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">1</a>
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -314,16 +318,16 @@
         <section class="subscription">
           <p class="subscription-text">Подпишитесь на рассылку</p>
           <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post" class="subscribtion-form">
-            <input type="email" name="email" placeholder="Ваш e-mail" class="subscription-input">
-            <button type="submit" name="e-mail" class="subscription-button button-blue">Подписаться</button>
+          <form class="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="subscription-button button-blue" type="submit" name="e-mail">Подписаться</button>
           </form>
         </section>
       </main>
       <footer class="page-footer">
         <ul class="social">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <svg class="social-vk" aria-hidden="true" focusable="false" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445
                 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184
@@ -341,7 +345,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://t.me/htmlacademy" class="social-link">
+            <a class="social-link" href="https://t.me/htmlacademy">
               <svg class="social-telegram" aria-hidden="true" focusable="false" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445
                 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283
@@ -352,7 +356,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
               <svg class="social-youtube" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252
                 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143
@@ -362,8 +366,8 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+7(812)8121212" class="contact-phone">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru" class="copyright">
+        <a class="contact-phone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
+        <a class="copyright" href="https://htmlacademy.ru">
           <svg class="copyright-htmlacademy" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" fill="black"/>
