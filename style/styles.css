@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("PT Sans"),
-   url(../fonts/ptsans-700.woff2);
+  src: url(../fonts/ptsans-700.woff2),
+   local("PT Sans");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PT Sans"),
-   url(../fonts/ptsans-400.woff2);
+  src: url(../fonts/ptsans-400.woff2),
+   local("PT Sans");
 }
 
 html {
