@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("PT Sans"),
-   url(../fonts/ptsans-700.woff2);
+  src: url(../fonts/ptsans-700.woff2),
+   local("PT Sans");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PT Sans"),
-   url(../fonts/ptsans-400.woff2);
+  src: url(../fonts/ptsans-400.woff2),
+   local("PT Sans");
 }
 
 html {
@@ -400,11 +400,12 @@ body {
 
 .welcome {
   width: 100%;
-  height: 485px;
+  min-height: 485px;
   margin-top: -10px;
 
-  background: url("../images/welcome/vector-foot.svg") bottom no-repeat, url("../images/pictures/index-background.jpg");
   background-color: #9db2cd;
+  background: url("../images/welcome/vector-foot.svg") bottom no-repeat, url("../images/pictures/index-background.jpg") no-repeat;
+  background-size: contain, cover;
 }
 
 .welcome-image {
@@ -683,9 +684,9 @@ body {
 
   color: #FFFFFF;
 
-  background-image: url(../images/pictures/filter-background.jpg);
   background-color: #6c7177;
-  background-size: 100% 100%;
+  background-image: url(../images/pictures/filter-background.jpg);
+  background-size: cover;
 }
 
 .filter-title {
@@ -1404,9 +1405,9 @@ body {
 
   color: #FFFFFF;
 
-  background-image: url(../images/pictures/subscribe-background.jpg);
   background-color: #a1abab;
-  background-size: 1200px;
+  background-image: url(../images/pictures/subscribe-background.jpg);
+  background-size: cover;
 }
 
 .subscription {
