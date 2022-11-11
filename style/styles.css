@@ -404,7 +404,9 @@ body {
   margin-top: -10px;
 
   background-color: #9db2cd;
-  background: url("../images/welcome/vector-foot.svg") bottom no-repeat, url("../images/pictures/index-background.jpg") no-repeat;
+  background-image: url("../images/welcome/vector-foot.svg"), url("../images/pictures/index-background.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: contain, cover;
 }
 
